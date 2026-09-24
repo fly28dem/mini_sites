@@ -1,206 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monopoly</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./cubes.css">
-    <link rel="icon" href="./imgs/favicon.jpg">
+    <link rel="icon" href="./icon.png">
+    <title>Redirect...</title>
+    <!-- <script>window.location.href = './drag-n-drop/index.html';</script> -->
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
+        a {
+            color: rgb(54, 54, 54);
+        }
+
+        a:hover {
+            filter: brightness(120%);
+        }
+    </style>
 </head>
-
 <body>
-    <div class="container">
-        <nav>
-            <div class="logo-container"><a href="./index.html">Monopoly</a></div>
-            <div class="figure-container">
-                <div class="figure" draggable="true" data-id="1">
-                    <img src="./imgs/red_figure.png">
-                </div>
-                <div class="figure" draggable="true" data-id="2">
-                    <img src="./imgs/green_figure.png">
-                </div>
-                <div class="figure" draggable="true" data-id="3">
-                    <img src="./imgs/blue_figure.png">
-                </div>
-                <div class="figure" draggable="true" data-id="4">
-                    <img src="./imgs/yellow_figure.png">
-                </div>
-            </div>
-            <div class="house-container">
-                <div class="figure figure-house" draggable="true" data-id="5">
-                    <img src="./imgs/house.png">
-                </div>
-                <div class="figure figure-house" draggable="true" data-id="6">
-                    <img src="./imgs/house.png">
-                </div>
-                <div class="figure figure-house" draggable="true" data-id="6">
-                    <img src="./imgs/house.png">
-                </div>
-                <div class="figure figure-house" draggable="true" data-id="6">
-                    <img src="./imgs/house.png">
-                </div>
-                <div class="figure figure-hotel" draggable="true" data-id="7">
-                    <img src="./imgs/hotel.png">
-                </div>
-                <div class="figure figure-hotel" draggable="true" data-id="7">
-                    <img src="./imgs/hotel.png">
-                </div>
-            </div>
-        </nav>
-        <main>
-            <div class="field">
-
-                <div class="monopoly">
-                    <div class="field-cell" id="zone1">
-                        <div class="cell-item cell-big"></div>
-                    </div>
-                    <div class="field-cell" id="zone2">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone3">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone4">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone5">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone6">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone7">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone8">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone9">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone10">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone11">
-                        <div class="cell-item cell-big"></div>
-                    </div>
-                    <div class="field-cell" id="zone12">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone13">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone14">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone15">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone16">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone17">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone18">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone19">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone20">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone21">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone22">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone23">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone24">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone25">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone26">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone27">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone28">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone29">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone30">
-                        <div class="cell-item cell-big"></div>
-                    </div>
-                    <div class="field-cell" id="zone31">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone32">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone33">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone34">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone35">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone36">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone37">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone38">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone39">
-                        <div class="cell-item"></div>
-                    </div>
-                    <div class="field-cell" id="zone40">
-                        <div class="cell-item cell-big"></div>
-                    </div>
-                    <div class="center-zone cube-container-field" id="zone41" onclick={rollTheDice()}>
-                        <div class="cube cube-one cube-hover" onclick=(rollTheDice())>
-                            <div class="face front"></div>
-                            <div class="face back"></div>
-                            <div class="face right"></div>
-                            <div class="face left"></div>
-                            <div class="face top"></div>
-                            <div class="face bottom"></div>
-                        </div>
-                        <div class="cube cube-two cube-hover" onclick=(rollTheDice())>
-                            <div class="face front"></div>
-                            <div class="face back"></div>
-                            <div class="face right"></div>
-                            <div class="face left"></div>
-                            <div class="face top"></div>
-                            <div class="face bottom"></div>
-                        </div>
-                    </div>
-
-
-
-                </div>
-            </div>
-        </main>
-    </div>
-
-    <script src="./script.js"></script>
+    <a href="./drag-n-drop/index.html">Monopoly</a>
+    <a href="./forms/index.html">Forms</a>
 </body>
-
 </html>

@@ -9,6 +9,10 @@ a {
     color: rgb(87, 86, 86);
 }
 
+a:hover {
+            filter: brightness(110%);
+        }
+
 body {
     background-color: rgb(238, 238, 238);
 }

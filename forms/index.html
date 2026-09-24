@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы</title>
+    <link rel="icon" href="./icon.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <h1>Формы</h1>
+        <nav class="nav">
+            <a href="../index.html">back -></a>
+        </nav>
+    </header>
+    <div class="container">
+            <main>
+                <form class="form" action="/register" method="POST">
+
+                    
+                    <!-- ФИО: лат/кир + пробел, мин 10 симв-->
+                    <label class="form-label" for="FIO">ФИО: 
+                        <input class="input" type="text" id="FIO" name="login" required minlength="10" maxlength="50" placeholder="Иван Иванов Иванович">
+                        <span class="error-text fio-error-text" style="display: none;">ФИО должно содержать только буквы и разделяться пробелами. </span>
+                    </label>
+
+
+                    <!-- required: обязательно. minlength="3": минимум 3 символа -->
+                    <label class="form-label" for="login">Логин:
+                        <input class="input" type="text" id="login" name="login" required minlength="5" maxlength="15" placeholder="Ivan06!">
+                        <span class="error-text login-error-text" style="display: none;">Логин должен состоять из заглавных и строчных букв, спец. символов и цифр.</span>
+                    </label>
+                    
+
+                    <!-- type="email": браузер проверит формат почты -->
+                    <label class="form-label" for="email">Email:
+                        <input class="input" type="email" id="email" name="email" required placeholder="ivan06@mail.ru">
+                        <span class="error-text email-error-text" style="display: none;">Адрес электронной почты должен содержать логин, знак "@"" и доменное имя. Не может сожержать симовлов киррилицы.</span>
+                    </label>
+                    
+
+                    <!-- type="number", min="18", max="99": только числа от 18 до 99 -->
+                    <label class="form-label" for="age">Возраст:
+                        <input class="input" type="number" id="age" name="age" min="6" max="99" required placeholder="6">
+                        <span class="error-text age-error-text" style="display: none;">Возрастное ограничение строго 6+</span>
+                    </label>
+                    
+
+                    <!-- pattern="[A-Za-z0-9]+": только латинские буквы и цифры (без пробелов и спецсимволов) -->
+                    <label class="form-label" for="password">Пароль (только буквы и цифры):
+                        <input class="input" type="password" id="password" name="password" minlength="15" required placeholder="va6NyA_Krut0i!">
+                        <span class="error-text password-error-text" style="display: none;">Пароль должен состоять из заглавных и строчных буков, спец. символов и цифр.</span>
+                    </label>
+                    
+                    <div class="button-container">
+                        <button class="button btn-login" type="submit" onclick="testInputs()">Войти</button>
+                        <button class="button btn-registration" type="submit">Зарегистрироваться</button>
+                    </div>
+                    
+                </form> 
+            </main>
+    </div>
+    <footer>
+        <div class="container container-center">Формы. 2026, 6+</div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
