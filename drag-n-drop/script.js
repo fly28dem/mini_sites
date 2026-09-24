@@ -11,7 +11,7 @@ function rollTheDice() {
 
     let cube1 = document.querySelector('.cube-one');
 
-    let randomMediumScale1 = getRandom(125, 175);
+    let randomMediumScale1 = getRandom(135, 175);
     let randomMediumAnimate1 = `scaleX(${randomMediumScale1}%) scaleY(${randomMediumScale1}%) scaleZ(${randomMediumScale1}%) rotateX(${getRandom(-1000, 1000)}deg) rotateY(${getRandom(-1000, 1000)}deg) rotateZ(${getRandom(-1000, 1000)}deg) translateX(0px) translateY(0px) translateZ(0px)`
     let newAnimate1 = `scaleX(100%) scaleY(100%) scaleZ(100%) rotateX(${getRandom90(-5000, 5000)}deg) rotateY(${getRandom90(-5000, 5000)}deg) rotateZ(${getRandom90(-5000, 5000)}deg) translateX(${getRandom(-30, 30)}px) translateY(${getRandom(-30, 30)}px) translateZ(${getRandom(-30, 30)}px)`
 
@@ -32,9 +32,9 @@ function rollTheDice() {
 
     let cube2 = document.querySelector('.cube-two');
 
-    let randomMediumScale2 = getRandom(125, 175);
-    let randomMediumAnimate2 = `scaleX(${randomMediumScale2}%) scaleY(${randomMediumScale2}%) scaleZ(${randomMediumScale2}%) rotateX(${getRandom(-3000, 3000)}deg) rotateY(${getRandom(-3000, 3000)}deg) rotateZ(${getRandom(-3000, 3000)}deg) translateX(0px) translateY(0px) translateZ(0px)`
-    let newAnimate2 = `scaleX(100%) scaleY(100%) scaleZ(100%) rotateX(${getRandom90(-5000, 5000)}deg) rotateY(${getRandom90(-5000, 5000)}deg) rotateZ(${getRandom90(-5000, 5000)}deg) translateX(${getRandom(-30, 30)}px) translateY(${getRandom(-30, 30)}px) translateZ(${getRandom(-30, 30)}px)`
+    let randomMediumScale2 = getRandom(135, 175);
+    let randomMediumAnimate2 = `scaleX(${randomMediumScale2}%) scaleY(${randomMediumScale2}%) scaleZ(${randomMediumScale2}%) rotateX(${getRandom(-5000, 5000)}deg) rotateY(${getRandom(-5000, 5000)}deg) rotateZ(${getRandom(-5000, 5000)}deg) translateX(0px) translateY(0px) translateZ(0px)`
+    let newAnimate2 = `scaleX(100%) scaleY(100%) scaleZ(100%) rotateX(${getRandom90(-3000, 3000)}deg) rotateY(${getRandom90(-3000, 3000)}deg) rotateZ(${getRandom90(-3000, 3000)}deg) translateX(${getRandom(-30, 30)}px) translateY(${getRandom(-30, 30)}px) translateZ(${getRandom(-30, 30)}px)`
 
     cube2.animate([
         { transform: lastAnimate2 },

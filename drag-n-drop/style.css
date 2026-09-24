@@ -80,6 +80,14 @@ nav {
     margin-top: 3px;
 }
 
+.figure-house {
+    height: 1.8vh;
+}
+
+.figure-hotel {
+    height: 2vh;
+}
+
 /* Кубы в файле cubes.css*/
 
 /* Контент */
@@ -140,7 +148,7 @@ main {
 
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 45% 45%;
+    grid-template-rows: 35% 35% 35% 35%;
     justify-content: center;
     align-items: center;
     /* border: 1px dashed red; */
@@ -151,7 +159,7 @@ main {
     background-color: rgba(245, 245, 245, 0.1);
     /* filter: blur(7px); */
     /* transform: scale(120%); */
-    cursor: pointer;
+    /* cursor: pointer; */
     transition: 0.1s;
 }
 
@@ -168,7 +176,7 @@ main {
 
 .cell-big {
     grid-template-columns: 45% 45%;
-    grid-template-rows: 40% 40%;
+    grid-template-rows: 35% 35% 25% 25%;
 }
 
 .cell-big .figure img {

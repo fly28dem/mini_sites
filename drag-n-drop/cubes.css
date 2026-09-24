@@ -1,19 +1,29 @@
 /* Кубы */
 
-.cube-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.house-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-content: center;
+    justify-items: center;
 
     height: 6vh;
-    width: 13vh;
-    padding: 25px;
+    width: 15vh;
+    padding: 15px;
     border-radius: 5vh;
-    gap: 15px;
+    gap: 5px;
     background-color: rgb(211, 209, 209);
+}
 
+.cube-container-field {
+    display: grid;
+    grid-template-columns: 25% 25%;
     perspective: 70vh;
     perspective-origin: 50% 50%;
+}
+
+.cube-container-field:hover {
+    cursor: pointer;
 }
 
 .cube {
@@ -106,30 +116,4 @@
     animation-duration: 2s;
     animation-name: rollTheDice;
     animation-iteration-count: 1;
-}
-
-@keyframes hoverTheDice {
-
-    from {
-        transform: scaleX(100%) scaleY(100%) scaleZ(100%) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
-    }
-
-    to {
-        transform: scaleX(105%) scaleY(105%) scaleZ(105%) rotateX(180deg) rotateY(0deg) rotateZ(-180deg) translateX(0px) translateY(0px) translateZ(0px) skewX(0deg) skewY(0deg);
-    }
-}
-
-@keyframes rollTheDice {
-
-    from {
-        transform: scaleX(100%) scaleY(100%) scaleZ(100%) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px);
-    }
-
-    50% {
-        transform: scaleX(135%) scaleY(135%) scaleZ(135%) rotateX(-445deg) rotateY(1145deg) rotateZ(345deg) translateX(0px) translateY(0px) translateZ(0px);
-    }
-
-    to {
-        transform: scaleX(100%) scaleY(100%) scaleZ(100%) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px);
-    }
 }

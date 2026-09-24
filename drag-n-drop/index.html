@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,9 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./cubes.css">
     <link rel="icon" href="./imgs/favicon.jpg">
-    
+
 </head>
+
 <body>
     <div class="container">
         <nav>
@@ -27,22 +29,24 @@
                     <img src="./imgs/yellow_figure.png">
                 </div>
             </div>
-            <div class="cube-container">
-                <div class="cube cube-one cube-hover" onclick=(rollTheDice())>
-                    <div class="face front"></div>
-                    <div class="face back"></div>
-                    <div class="face right"></div>
-                    <div class="face left"></div>
-                    <div class="face top"></div>
-                    <div class="face bottom"></div>
+            <div class="house-container">
+                <div class="figure figure-house" draggable="true" data-id="5">
+                    <img src="./imgs/house.png">
                 </div>
-                <div class="cube cube-two cube-hover" onclick=(rollTheDice())>
-                    <div class="face front"></div>
-                    <div class="face back"></div>
-                    <div class="face right"></div>
-                    <div class="face left"></div>
-                    <div class="face top"></div>
-                    <div class="face bottom"></div>
+                <div class="figure figure-house" draggable="true" data-id="6">
+                    <img src="./imgs/house.png">
+                </div>
+                <div class="figure figure-house" draggable="true" data-id="6">
+                    <img src="./imgs/house.png">
+                </div>
+                <div class="figure figure-house" draggable="true" data-id="6">
+                    <img src="./imgs/house.png">
+                </div>
+                <div class="figure figure-hotel" draggable="true" data-id="7">
+                    <img src="./imgs/hotel.png">
+                </div>
+                <div class="figure figure-hotel" draggable="true" data-id="7">
+                    <img src="./imgs/hotel.png">
                 </div>
             </div>
         </nav>
@@ -170,10 +174,27 @@
                     <div class="field-cell" id="zone40">
                         <div class="cell-item cell-big"></div>
                     </div>
-                    <div class="center-zone" id="zone41" onclick={rollTheDice()}></div>
+                    <div class="center-zone cube-container-field" id="zone41" onclick={rollTheDice()}>
+                        <div class="cube cube-one cube-hover" onclick=(rollTheDice())>
+                            <div class="face front"></div>
+                            <div class="face back"></div>
+                            <div class="face right"></div>
+                            <div class="face left"></div>
+                            <div class="face top"></div>
+                            <div class="face bottom"></div>
+                        </div>
+                        <div class="cube cube-two cube-hover" onclick=(rollTheDice())>
+                            <div class="face front"></div>
+                            <div class="face back"></div>
+                            <div class="face right"></div>
+                            <div class="face left"></div>
+                            <div class="face top"></div>
+                            <div class="face bottom"></div>
+                        </div>
+                    </div>
 
-                    
-                    
+
+
                 </div>
             </div>
         </main>
@@ -181,4 +202,5 @@
 
     <script src="./script.js"></script>
 </body>
+
 </html>
