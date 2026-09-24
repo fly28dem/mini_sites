@@ -88,7 +88,22 @@ nav {
     height: 2vh;
 }
 
-/* Кубы в файле cubes.css*/
+/* Недвижимость */
+
+.house-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-content: center;
+    justify-items: center;
+
+    height: 6vh;
+    width: 15vh;
+    padding: 15px;
+    border-radius: 5vh;
+    gap: 5px;
+    background-color: rgb(211, 209, 209);
+}
 
 /* Контент */
 
