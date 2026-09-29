@@ -1,17 +1,99 @@
-/* Контейнер */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+/* Контейнер */
 .container {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 70vh;
 }
 
-/* Доска */
+/* Форма создания стикера */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    gap: 2vh;
+    border: 1px solid black;
+    width: 100%;
+}
 
+/* Панель инструментов */
+.tool-container {
+    display: flex;
+    align-items: center;
+    /* justify-content: right; */
+
+    width: 100%;
+    height: 2.5vh;
+    border: 1px solid gray;
+    background-color: rgb(235, 235, 235);
+}
+
+/* Общие стили для кнопок */
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 2.5vh;
+    height: 2.5vh;
+    /* margin: 0 0.5vh; */
+    font-size: 2vh;
+    border: 1px solid gray;
+    transition: 0.1s;
+}
+
+/* Кнопка добавления */
+.add-button {
+}
+
+.add-button:hover {
+    cursor: pointer;
+    /* transform: scale(110%); */
+    filter: brightness(115%);
+    transition: 0.1s;
+}
+
+/* Кнопка цвета */
+.color-button {
+    background-color: red;
+}
+
+.color-button:hover {
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+
+
+textarea {
+    width: 10vh;
+    height: 10vh;
+    padding: 2vh;
+
+    font-family: "Caveat", cursive;
+    font-size: 2.4vh;
+
+    color: rgb(74, 79, 85);
+    background-color: rgb(233, 221, 110);
+    border: none;
+}
+
+textarea::selection {
+    background-color: rgba(134, 23, 156, 0.5);
+}
+
+
+
+
+/* Доска */
 .board {
     display: flex;
     justify-content: center;
     
-    width: 70vh;
+    width: 100%;
     height: 48vh;
     margin-top: 5vh;
 
