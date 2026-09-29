@@ -1,0 +1,23 @@
+/* Контейнер */
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Доска */
+
+.board {
+    display: flex;
+    justify-content: center;
+    
+    width: 70vh;
+    height: 48vh;
+    margin-top: 5vh;
+
+    border-radius: 12px;
+    background-image: url(./images/board.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 101%;
+}
