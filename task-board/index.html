@@ -5,18 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/icon.png">
     <title>Task board</title>
 </head>
 <body>
     <main class="container">
         <form>
+            <!-- Инструменты -->
             <div class="tool-container">
-                <button class="add-button">+</button>
-                <button class="color-button"></button>
+
+                <!-- Добавить стикер -->
+                <button class="button add-button">+</button>
+                <!-- Выбрать цвет -->
+                <input class="button color-button" type="color" value="#E9DD6E"/>
+
             </div>
-            <textarea type="text">Сделать дз и поиграть в майн</textarea>
+
+            <!-- Окно с настройками стикера -->
+            <div class="settings-container">
+                <!-- Контейнер с вводом текста стикера -->
+                <div class="input-content-container">
+
+                    <!-- Поле ввода текста стикера -->
+                    <textarea class="input-content" spellcheck="false" placeholder="Текст вашего стикера"></textarea>
+                    <!-- Кнопки поля -->
+                    <div class="input-buttons">
+                        <!-- Очистка -->
+                        <div class="button-container">
+                            <span class="bordered-caption">Очистить поле</span>
+                            <button name="clear-button" class="button clear-button">x</button>
+                        </div>
+                        <!-- Подтверждение -->
+                        <div class="button-container">
+                            <span class="bordered-caption">Подтвердить</span>
+                            <button name="access-button" class="button access-button">✓</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Сам стикер -->
+                <div class="sticker-container">
+                    <div type="text" class="sticker"></div>
+                </div>
+            </div>
+
+        <!-- Доска -->
         </form>
-        <div class="board"></div>
+        <div class="board">
+            <div class="clear-board">🗑</div>
+        </div>
+
+        <!-- Подвал с подсказками -->
+        <footer>
+            <div class="hotkey-container">
+                <span class="bordered-caption">"Ctrl + Left Click"</span> 
+                <span>to complete the task.</span>
+            </div>
+            <div class="hotkey-container">
+                <span class="bordered-caption">"Shift + Left Click"</span>
+                <span>to peel off the sticker.</span>
+            </div>
+        </footer>
     </main>
+
+    <!-- Подключение скрипта -->
+    <script src="./script.js"></script>
 </body>
 </html>
