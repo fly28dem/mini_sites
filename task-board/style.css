@@ -31,6 +31,7 @@ form {
 
 /* Панель инструментов */
 .tool-container {
+    position: relative;
     display: flex;
     align-items: center;
     /* justify-content: right; */
@@ -210,4 +211,18 @@ footer {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+/* назад */
+
+.back {
+    position: absolute;
+    right: 20px;
+    color: rgba(73, 73, 73, 0.5);
+    text-decoration: none;
+}
+
+.back:hover {
+    color: rgba(73, 73, 73, 0.7);
+    transition: 0.1s;
 }
