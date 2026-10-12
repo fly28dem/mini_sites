@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Смена темы</title>
+    <style>
+        /* Темы */
+        body.light { background: #ffffff; color: #333; }
+        body.dark { background: #2c3e50; color: #ecf0f1; }
+        body.blue { background: #3498db; color: #fff; }
+        
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border: 2px solid currentColor;
+            background: transparent;
+            color: inherit;
+            border-radius: 5px;
+        }
+        
+        button:hover { opacity: 0.8; }
+    </style>
+</head>
+<body class="light">
+    <p>Это пример смены темы. Нажмите на кнопку ниже.</p>
+    
+    <button onclick="setTheme('light')">Светлая</button>
+    <button onclick="setTheme('dark')">Темная</button>
+    <button onclick="setTheme('blue')">Синяя</button>
+
+    <script>
+        function setTheme(theme) {
+            document.body.className = theme;
+        }
+    </script>
+</body>
+</html>

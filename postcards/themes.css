@@ -1,0 +1,102 @@
+/* Тёмная */
+
+.postcard-light {
+    background-color: rgb(243, 242, 239);
+}
+
+.postcard-light .line {
+    background-color: rgb(104, 104, 104);
+}
+
+.postcard-light .postcard__text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: rgb(39, 39, 39); 
+}
+
+.postcard-light .adress {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: rgb(39, 39, 39); 
+}
+
+/* Тёмная */
+
+.postcard-dark {
+    background-color: rgb(31, 31, 34);
+}
+
+.postcard-dark .postcard__text {
+    font-family: sans-serif;
+    font-size: 17px;
+    color: rgb(221, 221, 221);
+}
+
+.postcard-dark .adress {
+    font-family: sans-serif;
+    font-size: 15px;
+    color: rgb(156, 156, 156);
+}
+
+
+/* Праздничная */
+
+.postcard-holiday {
+    background-image: url(./imgs/holiday.jpg);
+    background-position: center;
+}
+
+.postcard-holiday .line {
+    background-color: rgb(255, 252, 216);
+}
+
+.postcard-holiday .adress, .postcard__text {
+    backdrop-filter: blur(5px);
+    color: rgb(255, 252, 216);
+}
+
+
+/* Синяя */
+
+.postcard-blue {
+    background-color: rgb(110, 110, 212);
+}
+
+.postcard-blue .postcard__text {
+    font-family: monospace;
+    font-size: 17px;
+    color: rgb(198, 202, 248);
+}
+
+.postcard-blue .line {
+    background-color: rgb(166, 171, 248);
+}
+
+.postcard-blue .adress {
+    font-family: monospace;
+    font-size: 15px;
+    color: rgb(166, 171, 248);
+}
+
+
+/* Оранжевая */
+
+.postcard-orange {
+    background-color: rgb(241, 125, 58);
+}
+
+.postcard-orange .postcard__text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: rgb(185, 62, 5);
+}
+
+.postcard-orange .line {
+    background-color: rgb(179, 89, 30);
+}
+
+.postcard-orange .adress {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    color: rgb(179, 89, 30);
+}

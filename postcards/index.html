@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postcards</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./themes.css">
+</head>
+<body>
+    <nav class="backLink">
+        <a href="../index.html">back -></a>
+    </nav>
+    <main class="container">
+        <form class="form">
+            <h1 class="form__title">Форма</h1>
+            <input name="text" type="text" placeholder="Текст открытки">
+            <input name="recipient" type="text" placeholder="Отправитель">
+            <input name="sender" type="text" placeholder="Получатель">
+            <select name="theme">
+                <option value="postcard-light">Светлая</option>
+                <option value="postcard-dark">Тёмная</option>
+                <option value="postcard-holiday">Праздничная</option>
+                <option value="postcard-blue">Синяя</option>
+                <option value="postcard-orange">Оранжевая</option>
+            </select>
+            <button class="send">Отправить</button>
+        </form>
+        <div class="postcards-container">
+            <h1 class="postcards__title">Открытки</h1>
+            <button class="delete">Удалить всё</button>
+            <div class="postcards">
+                <div class="postcard postcard-dark">
+                    <p class="postcard__text">С днем рождения! Желаю крепкого здоровья, душевного спокойствия и много радостных дней. Пусть все планы исполняются легко, а рядом всегда будут близкие и верные люди, готовые поддержать в любую минуту. Больше улыбок, тепла и ярких моментов!</p>
+                    <hr class="line">
+                    <div class="adress">
+                        <p>От: ООО "Пододеяльники"</p>
+                        <p>Кому: Фрэнк Киенбург — лидер команды разработки игры Brawl Stars</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
