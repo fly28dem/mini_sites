@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./images/icon.png">
+    <title>Videogames</title>
+</head>
+
+<body>
+    <main class="container">
+        <nav class="nav-container content-container">
+            <h1>Библиотека видеоигр</h1>
+        </nav>
+        <section class="form-container content-container">
+            <form>
+                <legend>Найти игру</legend>
+                <div class="search-container">
+                    <div class="filter-container">
+
+                        <span class="filter-title">По платформе:</span>
+
+                        <div class="filter-options">
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="platform" value="steam"> <span
+                                    class="checkbox-name">Steam</span>
+                            </label>
+
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="platform" value="microsoft"> <span
+                                    class="checkbox-name">Microsoft
+                                    Store</span>
+                            </label class="checkbox-container">
+
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="platform" value="free"> <span
+                                    class="checkbox-name">Пиратки</span>
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div class="filter-container">
+
+                        <span class="filter-title">По жанрам:</span>
+
+                        <div class="filter-options">
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="genre" value="sandbox"> <span
+                                    class="checkbox-name">Песочница</span>
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="genre" value="action"> <span
+                                    class="checkbox-name">Экшен</span>
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="genre" value="rpg"> <span class="checkbox-name">Ролевые
+                                    (RPG)</span>
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="genre" value="strategy"> <span
+                                    class="checkbox-name">Стратегия</span>
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="genre" value="shooter"> <span
+                                    class="checkbox-name">Шутер</span>
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="genre" value="adventure"> <span
+                                    class="checkbox-name">Приключения</span>
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="genre" value="simulation"> <span
+                                    class="checkbox-name">Симулятор</span>
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="genre" value="puzzle"> <span
+                                    class="checkbox-name">Головоломка</span>
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="genre" value="racing"> <span
+                                    class="checkbox-name">Гонки</span>
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <div class="filter-container">
+
+                        <span class="filter-title">По прогрессу:</span>
+
+                        <div class="filter-options">
+                            <select id="game-progress" name="progress" class="form-select" required>
+                                <option value="" disabled selected>Статус прохождения...</option>
+                                <option value="start">Не пройдена</option>
+                                <option value="playing">Играю сейчас</option>
+                                <option value="finish">Пройдена</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="form-btn" type="submit">Найти</button>
+
+            </form>
+            <form class="form-add-game">
+                <div class="add-game-options-container">
+                    <legend>Добавить игру</legend>
+                    <div class="add-game-field">
+                        <label for="game-title" class="add-game-title">Название игры:</label>
+                        <input type="text" id="game-title" name="title" class="form-input"
+                            placeholder="Например, The Witcher 3" required>
+                    </div>
+
+                    <div class="add-game-field">
+                        <label for="game-platform" class="add-game-title">Платформа:</label>
+                        <select id="game-platform" name="platform" class="form-select" required>
+                            <option value="" disabled selected>Выберите платформу...</option>
+                            <option value="pc">ПК</option>
+                            <option value="mobile">Смартфон (iOS/Android)</option>
+                            <option value="ps5">PlayStation 5</option>
+                            <option value="xbox">Xbox Series X/S</option>
+                        </select>
+                    </div>
+
+                    <div class="add-game-field">
+                        <label class="add-game-title">Жанры:</label>
+                        <div class="filter-options">
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="genre" value="sandbox"> <span
+                                    class="checkbox-name">Песочница</span>
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="genre" value="action"> <span
+                                    class="checkbox-name">Экшен</span>
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="genre" value="rpg"> <span class="checkbox-name">Ролевые
+                                    (RPG)</span>
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="genre" value="strategy"> <span
+                                    class="checkbox-name">Стратегия</span>
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="genre" value="shooter"> <span
+                                    class="checkbox-name">Шутер</span>
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="genre" value="adventure"> <span
+                                    class="checkbox-name">Приключения</span>
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="genre" value="simulation"> <span
+                                    class="checkbox-name">Симулятор</span>
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="genre" value="puzzle"> <span
+                                    class="checkbox-name">Головоломка</span>
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="genre" value="racing"> <span
+                                    class="checkbox-name">Гонки</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="add-game-field">
+                        <label for="game-progress" class="add-game-title">Прогресс прохождения:</label>
+                        <select id="game-progress" name="progress" class="form-select" required>
+                            <option value="" disabled selected>Статус прохождения...</option>
+                            <option value="start">Не пройдена</option>
+                            <option value="playing">Играю сейчас</option>
+                            <option value="finish">Пройдена</option>
+                        </select>
+                    </div>
+
+                    <button class="form-btn" type="submit">Добавить в библиотеку</button>
+                </div>
+            </form>
+
+        </section>
+
+        <section class="content-container">
+            <div class="games-container">
+
+                <div class="game-card">
+                    <!-- Изображение/Обложка игры -->
+                    <div class="game-card-cover">
+                        <span class="platform-badge ps5">PS5</span>
+                        <img src="./imgs/thewitcher.jpg" class="cover-img">
+                    </div>
+
+                    <!-- Контентная часть карточки -->
+                    <div class="game-card-content">
+                        <h3 class="game-title">The Witcher 3: Wild Hunt</h3>
+
+                        <!-- Выбранные жанры -->
+                        <div class="game-genres">
+                            <span class="genre-tag">Ролевые (RPG)</span>
+                            <span class="genre-tag">Экшен</span>
+                            <span class="genre-tag">Приключения</span>
+                        </div>
+
+                        <!-- сСылки -->
+                        <div class="game-links">
+                            <span>Ссылки:</span>
+                            <div class="link-tag">
+                                <a href="">Steam</a>
+                            </div>
+                            <div class="link-tag">
+                                <a href="">Xbox</a>
+                            </div>
+                            <div class="link-tag">
+                                <a href="">Пиратка</a>
+                            </div>
+                        </div>
+
+                        <!-- Прогресс прохождения -->
+                        <div class="game-progress-container">
+                            <div class="progress-info">
+                                <span>Не пройдена</span>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Подключение скрипта -->
+    <script src="./script.js"></script>
+</body>
+
+</html>

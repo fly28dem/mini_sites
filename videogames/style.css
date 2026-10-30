@@ -1,0 +1,264 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 3%;
+}
+
+.content-container {
+    width: calc(1400px - 6%);
+    min-width: 320px;
+    margin: auto;
+
+    border-bottom: 1px solid rgb(71, 71, 71);
+}
+
+.nav-container {
+    padding: 4vh 0 2vh 0;
+}
+
+h1 {
+    font-size: 28px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+/* Формы */
+
+legend {
+    color: black;
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Поиск */
+
+.search-container {
+    display: flex;
+    gap: 15px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    padding: 3% 0% 2% 0%;
+    /* gap: 10%; */
+}
+
+.filter-title {
+    color: rgb(44, 44, 44);
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding: 10px;
+    padding-left: 0;
+}
+
+.filter-options {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 8px;
+}
+
+.form-btn {
+    display: flex;
+    align-self: start;
+
+    padding: 5px 13px;
+    margin-top: 15px;
+
+    color: rgb(41, 41, 41);
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 3px;
+}
+
+.checkbox-name {
+    color: rgb(53, 53, 53);
+    font-size: 13px;
+    font-family: sans-serif;
+    user-select: none;
+}
+
+.checkbox-container input[type="checkbox"] {
+    accent-color: #0a1f3d;
+    width: 13px;
+    height: 13px;
+}
+
+/* Добавить игру */
+
+.form-add-game-container {
+    padding: 2% 0 1% 0;
+}
+
+.form-add-game {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-game-field {
+    display: flex;
+    align-items: center;
+    margin: 15px 10px 0 0;
+}
+
+.add-game-title {
+    min-width: 200px;
+
+    color: rgb(58, 58, 58);
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+/* Игры */
+.games-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.game-card {
+    position: relative;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    box-shadow: 0 4px 15px rgba(66, 66, 66, 0.06);
+    margin: 10px;
+    transition-duration: 0.2s;
+}
+
+/* Обложка */
+.game-card-cover {
+    position: relative;
+    height: 180px;
+    background-color: #565e66;
+    /* border-radius: 3px; */
+}
+
+.cover-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+/* Бейдж платформы поверх обложки */
+.platform-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 4px 10px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Платформa */
+.platform-badge {
+    background-color: #414141;
+}
+
+/* Контент */
+.game-card-content {
+    padding: 13px;
+    padding-bottom: 0;
+}
+
+.game-title {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #3f4449;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+/* Теги жанров */
+.game-genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 5px;
+}
+
+.genre-tag {
+    background-color: #e8ebee;
+    color: #656769;
+    font-size: 11px;
+    padding: 3px 5px;
+    border-radius: 2px;
+    border: 1px solid #8a8c8f;
+}
+
+/* Блок прогресса */
+.game-progress-container {
+    border-top: 1px solid #f1f3f5;
+    padding-top: 15px;
+}
+
+.progress-info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 50%;
+    
+    color: rgb(235, 235, 235);
+    font-size: 11px;
+    font-weight: 600;
+    background-color: rgb(56, 153, 0);
+    padding: 5px 7px;
+    border-radius: 3px;
+}
+
+.game-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px;
+    border-radius: 3px;
+    margin-top: 15px;
+    
+    font-size: 11px;
+    background-color: rgb(194, 211, 185);
+}
+
+.game-links span {
+    font-weight: 600;
+    color: rgb(2, 90, 2);
+}
+
+.link-tag a{
+    padding: 3px 5px;
+    background-color: rgb(0, 150, 0);
+    border-radius: 3px;
+    transition-duration: 0.1s;
+    color: rgb(211, 228, 211);
+    text-decoration: none;
+}
+
+.link-tag a:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    background-color: rgb(0, 182, 0);
+    transition-duration: 0.1s;
+}
